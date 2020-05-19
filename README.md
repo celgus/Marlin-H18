@@ -1,7 +1,7 @@
 # Чистый Marlin (2.0.5.3) для Hercules 2018 :ru:
 
 ## Уже включенные параметры :wrench:
- - `#define PID_AUTOTUNE_MENU` — **автокалибровка PID** (стола) через **меню**.
+ - `#define PID_AUTOTUNE_MENU` — **автокалибровка PID** (экструдера) через **меню**.
  - `#define PIDTEMPBED` — выключите, либо **произведите автокалибровку** 
  - `#define THERMAL_PROTECTION_HOTENDS` и `#define THERMAL_PROTECTION_BED`
  - `#define S_CURVE_ACCELERATION`
