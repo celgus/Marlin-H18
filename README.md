@@ -9,6 +9,7 @@
 -  `#define THERMAL_PROTECTION_HOTENDS` и `#define THERMAL_PROTECTION_BED`
 -  `#define S_CURVE_ACCELERATION`
 -  `#define EEPROM_SETTINGS` — теперь все **настройки** (PID's, ускорения, джерки и тд.) **хранятся в памяти** контроллера.
+-  `#define ADVANCED_PAUSE_FEATURE` — смена филамента командой M600 (через плагин Cura, например) или через меню.
 -  `#define LCD_LANGUAGE en` — мне комфортнее с **английским языком**, можете изменить на `ru`.
 -  `#define ADAPTIVE_STEP_SMOOTHING`
 -  `#define LCD_SET_PROGRESS_MANUALLY` — позволяет выводить **прогресс** печати с [OctoPrint](https://github.com/OctoPrint/OctoPrint) *(необходим еще плагин)* на экран принтера.
@@ -29,5 +30,6 @@
 7. Выберите "*Скетч*" :arrow_right: "**Загрузка**"
 8.  **Готово! :white_check_mark:**
 > Arduino IDE может долго компилировать прошивку, не закрывайте окно и не отключайте плату от ПК.
+9. Сбросьте содержимое EEPROM в дефолтные значения командой M502 и сохраните в EPPROM командой M500.
 
 *По любым вопросам можете обращаться в Telegram  **@celgus***  
