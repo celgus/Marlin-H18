@@ -31,5 +31,15 @@
 8.  **Готово! :white_check_mark:**
 > Arduino IDE может долго компилировать прошивку, не закрывайте окно и не отключайте плату от ПК.
 9. Сбросьте содержимое EEPROM в дефолтные значения командой M502 и сохраните в EPPROM командой M500.
+11. Если на LCD панели после загрузки будут артефакты, необходимо изменить дефолтные тайминги:
+
+```
+#define ST7920_DELAY_1 DELAY_NS(50) // After CLK LOW
+#define ST7920_DELAY_2 DELAY_NS(150) // After DAT
+#define ST7920_DELAY_3 DELAY_NS(50) // After CLK HIGH
+```
+
+Этот код нужно добавить в конец Configuration.h
+Подробнее можно прочитать тут https://marlinfw.org/docs/basics/troubleshooting.html 
 
 *По любым вопросам можете обращаться в Telegram  **@celgus***  
